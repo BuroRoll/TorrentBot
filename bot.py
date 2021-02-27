@@ -4,7 +4,7 @@ from par import Parser
 
 class Bot(object):
     def __init__(self, token):
-        self.bot = telebot.TeleBot(token, parse_mode=None)
+        self.bot = telebot.TeleBot(token, parse_mode=None, threaded=False)
         self.links = []
         self.parser = Parser()
 
